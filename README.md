@@ -1,6 +1,8 @@
 #  gulp-next
 ## 安装
+```
 npm install --save-dev gulp-next
+```
 ## 参数
 callback: 接受一个回调函数作为参数
 ## 例子
