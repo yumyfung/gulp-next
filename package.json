@@ -1,0 +1,37 @@
+{
+  "name": "gulp-next",
+  "version": "1.0.3",
+  "description": "plugin: gulp-next",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "plugin",
+    "gulp-next"
+  ],
+  "author": {
+    "name": "yumy"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "through-gulp": "^0.3.8"
+  },
+  "dependencies": {
+    "through-gulp": "^0.3.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yumyfung/gulp-next.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yumyfung/gulp-next/issues"
+  },
+  "homepage": "https://github.com/yumyfung/gulp-next#readme",
+  "readme": "#  gulp-next\n## 安装\n```\nnpm install --save-dev gulp-next\n```\n## 参数\ncallback: 接受一个回调函数作为参数\n## 例子\n```Javascript\nvar gulp = require('gulp');\nvar next= require('gulp-next');\n\ngulp.task('test', function () {\n  gulp.src('images/*.png')\n      .pipe(gulp.dest('path/output/'))\n      .pipe(next(function(){\n          console.log('success...');\n      }));\n});\n```\n",
+  "readmeFilename": "README.md",
+  "_id": "gulp-next@1.0.3",
+  "_shasum": "0211fc19f4ded53b30829772a6fb8b4ade7331dc",
+  "_from": "gulp-next@*"
+}
